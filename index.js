@@ -13,6 +13,9 @@ app.use(express.json())
 
 app.use("/todos", todoRouter)
 
+app.get("/",(req,res)=>{
+    res.send({"msg":"Welcome to Todos"})
+})
 
 app.listen(7860, async()=>{
 
